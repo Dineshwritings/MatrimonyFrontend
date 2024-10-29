@@ -21,7 +21,7 @@ const CreateAdmin = ({ isOpen, onClose }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/register/admin', {
+      const response = await axios.post('https://matrimony-dqx4.onrender.com/api/auth/register/admin', {
         username,
         password,
       });

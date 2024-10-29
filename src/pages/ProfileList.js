@@ -46,7 +46,7 @@ const ProfileList = () => {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://localhost:5000/api/deleteprofile/${deleteProfileId}`);
+      await axios.delete(`https://matrimony-dqx4.onrender.com/api/deleteprofile/${deleteProfileId}`);
       setMessage('Profile deleted successfully');
       setOpenSnackbar(true);
       fetchProfilesData(currentPage);

@@ -4,7 +4,7 @@ import axios from 'axios';
 // Async thunk for fetching profiles
 const token = localStorage.getItem('token');
 export const fetchProfiles = createAsyncThunk('profiles/fetchProfiles', async ({ page, limit }) => {
-  const response = await axios.get(`http://localhost:5000/api/allprofiles?page=${page}&limit=${limit}`,{
+  const response = await axios.get(`https://matrimony-dqx4.onrender.com/api/allprofiles?page=${page}&limit=${limit}`,{
     headers:{
       Authorization: `Bearer ${token}`,
     }

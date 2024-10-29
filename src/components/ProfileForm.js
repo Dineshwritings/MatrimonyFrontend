@@ -122,7 +122,7 @@ const ProfileForm = ({ onClose }) => {
         image: imageUrl,
       };
 
-      const response = await fetch("http://localhost:5000/api/profiles/", {
+      const response = await fetch("https://matrimony-dqx4.onrender.com/api/profiles/", {
         method: "POST",
         headers: {
           'Accept': '*/*',

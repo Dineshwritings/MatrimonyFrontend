@@ -15,7 +15,7 @@ const Auth = () => {
   const handleLogin = async () => {
     try {
       const response = await axios.post(
-        'http://localhost:5000/api/auth/login',
+        'https://matrimony-dqx4.onrender.com/api/auth/login',
         { username, password, stayLoggedIn }, // Include stayLoggedIn in the request body
         {
           headers: {
